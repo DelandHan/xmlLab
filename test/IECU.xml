@@ -1,0 +1,479 @@
+﻿<AutomationForm>
+  <Templates />
+  <DocBody>
+  <Section Type="Notice" AutoHeading="No" Confidentiality="Outsourcer">
+    <SectionBody>
+      <ToAdd>
+        <Name>PathLink</Name>
+        <Attributes>
+          <Type>URL</Type>
+          <Value>
+            https://vstf-us-wa-28.partners.extranet.microsoft.com:8443/tfs/ContentIdea/ContentIdea/_workitems/edit/<ToInput key="CI ID"/>
+          </Value>
+        </Attributes>
+        <Text>Content Idea Request <ToInput key="CI ID"/></Text>
+      </ToAdd>
+    </SectionBody>
+  </Section>
+  <Section Type="Summary" AutoHeading="Yes">
+    <SectionBody>
+      This security update resolves several reported vulnerabilities in Internet Explorer. These vulnerabilities could allow remote code execution if a user views a specially crafted webpage in Internet Explorer. To learn more about the vulnerabilities, see <ToAdd>
+      <Name>PathLink</Name>
+      <Attributes>
+        <Type>URL</Type>
+        <Value>
+          https://technet.microsoft.com/library/security/<ToInput key="MS ID">Input bulletin</ToInput>
+        </Value>
+      </Attributes>
+      <Text>
+        Microsoft Security Bulletin <ToInput key="MS ID">Input bulletin</ToInput>
+      </Text>
+    </ToAdd>.<Boilerplate BoilerplateName="Assets_Reference_JSCSS" Version="6">
+        <Output Target="Web">
+          <Formatting Type="FixedText">&lt;script src="//support.microsoft.com/library/JavaScript/support/en-US/Assets_CIP_V1.js" type="text/javascript"&gt;&lt;/script&gt;</Formatting>
+        </Output>
+      </Boilerplate>
+    </SectionBody>
+  </Section>
+  <Section Type="Summary" AutoHeading="No" Confidentiality="Public">
+    <SectionHeading>How to get and install the update</SectionHeading>
+    <SectionBody>
+      <Formatting Type="H3">Method 1: Microsoft Update</Formatting>
+      <PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_start_expanded.png"/>This update is available through Microsoft Update. When you turn on automatic updating, this update will be downloaded and installed automatically. For more information about how to get security updates automatically, see the "Turn on automatic updating in Control Panel" section of <PathLink Type="URL" Value="https://www.microsoft.com/security/pc-security/updates.aspx">this Safety &amp; Security Center article</PathLink>. <Br/><Br/><Formatting Type="B">Note</Formatting> For Windows RT and Windows RT 8.1, this update is available through Microsoft Update only.<PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_end.png"/><Formatting Type="H3">Method 2: Microsoft Download Center</Formatting><PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_start_collapsed.png"/>
+      You can get the stand-alone update package through the Microsoft Download Center. Go to <PathLink Type="URL" Value="https://technet.microsoft.com/library/security/MS16-051">Microsoft Security Bulletin MS16-051</PathLink> to find the download links for this update.
+
+      <PathLink Type="Graphic" Value="https://support.microsoft.com/library/images/support/en-US/assets_folding_end_collapsed.png"/>
+    </SectionBody>
+  </Section>
+  <Section Type="MoreInformation" AutoHeading="Yes">
+    <SectionBody>
+      The following article contains more information about this security update:<Boilerplate BoilerplateName="xref2" Version="2">
+        <Parameter Id="P1">3154070</Parameter>
+        <Parameter Id="P2">MS16-051: Security update for Internet Explorer: May 10, 2016</Parameter>
+        <Formatting Type="Indent">
+          <KBLink Type="ContentObject" ContentId="3154070" ContentType="KB" LanguageLocale="[LN]">3154070</KBLink> MS16-051: Security update for Internet Explorer: May 10, 2016
+        </Formatting>
+      </Boilerplate>Additionally, see the following Microsoft KB articles for information about the Windows 10 and Windows 10 Version 1511 cumulative updates:<Boilerplate BoilerplateName="xref2" Version="2">
+        <Parameter Id="P1">3156387</Parameter>
+        <Parameter Id="P2">Cumulative Update for Windows 10: May 10, 2016</Parameter>
+        <Formatting Type="Indent">
+          <KBLink Type="ContentObject" ContentId="3156387" ContentType="KB" LanguageLocale="[LN]">3156387</KBLink> Cumulative Update for Windows 10: May 10, 2016
+        </Formatting>
+      </Boilerplate><Boilerplate BoilerplateName="xref2" Version="2">
+        <Parameter Id="P1">3156421</Parameter>
+        <Parameter Id="P2">Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016</Parameter>
+        <Formatting Type="Indent">
+          <KBLink Type="ContentObject" ContentId="3156421" ContentType="KB" LanguageLocale="[LN]">3156421</KBLink> Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016
+        </Formatting>
+      </Boilerplate><Formatting Type="H3">Security update deployment information</Formatting><PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_start_collapsed.png"/><Formatting Type="H4">Windows Vista (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file names</Formatting>
+          </Td>
+          <Td>
+            For Internet Explorer 9 for all supported 32-bit editions of Windows Vista:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td> </Td>
+          <Td>
+            For Internet Explorer 9 for all supported x64-based editions of Windows Vista:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            WUSA.exe does not support uninstall of updates. To uninstall an update installed by WUSA, click <Formatting Type="B">Control Panel</Formatting>, and then click <Formatting Type="B">Security</Formatting>. Under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Registry key verification</Formatting>
+          </Td>
+          <Td>
+            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
+          </Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows Server 2008</Formatting><Formatting Type="H5">Reference Table</Formatting>he following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file names</Formatting>
+          </Td>
+          <Td>
+            For Internet Explorer 9 for all supported 32-bit editions of Windows Server 2008:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td> </Td>
+          <Td>
+            For Internet Explorer 9 in all supported x64-based editions of Windows Server 2008:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            WUSA.exe does not support uninstall of updates. To uninstall an update installed by WUSA, click <Formatting Type="B">Control Panel</Formatting>, and then click <Formatting Type="B">Security</Formatting>. Under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Registry key verification</Formatting>
+          </Td>
+          <Td>
+            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
+          </Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows 7 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file name</Formatting>
+          </Td>
+          <Td>
+            For Internet Explorer 11 for Windows 7 for 32-bit Systems Service Pack 1:<Br/><Formatting Type="B">IE11-Windows6.1-KB3154070-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td> </Td>
+          <Td>
+            For Internet Explorer 11 for Windows 7 for x64-based Systems Service Pack 1:<Br/><Formatting Type="B">IE11-Windows6.1-KB3154070-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>A system restart is required after you apply this security update.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, and then under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Registry key verification</Formatting>
+          </Td>
+          <Td>
+            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
+          </Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows Server 2008 R2 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file name</Formatting>
+          </Td>
+          <Td>
+            For Internet Explorer 11 for Windows Server 2008 R2 for x64-based Systems Service Pack 1:<Br/><Formatting Type="B">IE11-Windows6.1-KB3154070-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, and then under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Registry key verification</Formatting>
+          </Td>
+          <Td>
+            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
+          </Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows 8.1 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file name</Formatting>
+          </Td>
+          <Td>
+            For Internet Explorer 11 in all supported 32-bit editions of Windows 8.1:<Br/><Formatting Type="B">Windows8.1-KB3154070-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td> </Td>
+          <Td>
+            For Internet Explorer 11 in all supported x64-based editions of Windows 8.1:<Br/><Formatting Type="B">Windows8.1-KB3154070-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates<Formatting Type="B">.</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Registry key verification</Formatting>
+          </Td>
+          <Td>
+            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
+          </Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows Server 2012 and Windows Server 2012 R2 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file name</Formatting>
+          </Td>
+          <Td>
+            For Internet Explorer 10 in all supported editions of Windows Server 2012:<Br/><Formatting Type="B">Windows8-RT-KB3154070-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td> </Td>
+          <Td>
+            For Internet Explorer 11 in all supported editions of Windows Server 2012 R2:<Br/><Formatting Type="B">Windows8.1-KB3154070-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Registry key verification</Formatting>
+          </Td>
+          <Td>
+            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
+          </Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows RT 8.1 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software.<Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Deployment</Formatting>
+          </Td>
+          <Td>
+            This update is available via <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:http://go.microsoft.com/fwlink/?LinkId=21130">Windows Update</PathLink>.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart Requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal Information</Formatting>
+          </Td>
+          <Td>
+            Click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>Not applicable</Td>
+        </Tr>
+      </Table><Formatting Type="H4">Windows 10 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Security update file name</Formatting>
+          </Td>
+          <Td>
+            For all supported 32-bit editions of Windows 10:<Br/><Formatting Type="B">Windows10.0-KB3156387-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td></Td>
+          <Td>
+            For all supported x64-based editions of Windows 10:<Br/><Formatting Type="B">Windows10.0-KB3156387-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td></Td>
+          <Td>
+            For all supported 32-bit editions of Windows 10 Version 1511:<Br/><Formatting Type="B">Windows10.0-KB3156421-x86.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td></Td>
+          <Td>
+            For all supported x64-based editions of Windows 10 Version 1511:<Br/><Formatting Type="B">Windows10.0-KB3156421-x64.msu</Formatting>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Installation switches</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Restart requirement</Formatting>
+          </Td>
+          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">Removal information</Formatting>
+          </Td>
+          <Td>
+            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates.
+          </Td>
+        </Tr>
+        <Tr>
+          <Td>
+            <Formatting Type="B">File information</Formatting>
+          </Td>
+          <Td>
+            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3156387">Microsoft Knowledge Base Article 3156387</PathLink><Br/>See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3156421">Microsoft Knowledge Base Article 3156421</PathLink>
+          </Td>
+        </Tr>
+      </Table> <PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_end_collapsed.png"/><Formatting Type="H3">How to get help and support for this security update</Formatting><PathLink Type="Graphic" Value="https://support.microsoft.com/library/images/support/en-US/assets_folding_start_collapsed.png"/>Help for installing updates: <PathLink Type="URL" Value="https://support.microsoft.com/ph/6527">Support for Microsoft Update</PathLink><Br/><Br/>
+      Security solutions for IT professionals: <PathLink Type="URL" Value="https://technet.microsoft.com/security/bb980617.aspx">TechNet Security Troubleshooting and Support</PathLink><Br/><Br/>
+      Help for protecting your Windows-based computer from viruses and malware: <PathLink Type="URL" Value="https://support.microsoft.com/contactus/cu_sc_virsec_master">Virus Solution and Security Center</PathLink><Br/><Br/>Local support according to your country: <PathLink Type="URL" Value="http://support.microsoft.com">International Support</PathLink><PathLink Type="Graphic" Value="https://support.microsoft.com/library/images/support/en-US/assets_folding_end_collapsed.png"/>
+    </SectionBody>
+  </Section>
+  <Section Type="SecureData" AutoHeading="No" Confidentiality="Outsourcer">
+    <SectionBody>
+      For more information about the end-to-end process for Internet Explorer cumulative updates, see the following article: <Formatting Type="Indent">
+        <PathLink Type="URL" Value="http://bemis/2403490">2403490 End to end process for Internet Explorer cumulative updates</PathLink>
+      </Formatting><Formatting Type="B">Note</Formatting> Knowledge Base article 2403490 is MSInternal and available only in Bemis. <Br/><Br/><Formatting Type="B">Author: secure </Formatting><Br/><Formatting Type="B">Writer: kbSec (delhan)</Formatting><Br/><Formatting Type="B">Tech Review: secure</Formatting><Br/><Formatting Type="B">Editor: v-tiburd</Formatting>
+    </SectionBody>
+  </Section>
+</DocBody>
+</AutomationForm>
