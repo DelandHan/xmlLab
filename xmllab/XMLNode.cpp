@@ -267,6 +267,26 @@ void xml::XMLNode::setAttribute(const std::string & key, const std::string & val
 	}
 }
 
+void xml::XMLNode::updateAttribute(const std::string & oldkey, const std::string & key, const std::string & value)
+{
+	if (key.size() == 0) return;
+	if (theType == ELEMENT_NODE) {
+		AttNode *node = theAtt, *prev = nullptr;
+		while (node) {
+			if (node->theKey == oldkey) {
+				node->theKey = key;
+				node->theValue = value;
+				return;
+			}
+			prev = node;
+			node = node->theNext;
+		}
+		prev = prev->insert(key, value);
+		if (theAtt == nullptr) theAtt = prev;
+	}
+
+}
+
 void xml::XMLNode::removeAttribute(const std::string & key)
 {
 	AttNode * node = theAtt;
