@@ -33,4 +33,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="IECU.xml" />
+    <Xml Include="out.xml" />
+  </ItemGroup>
 </Project>

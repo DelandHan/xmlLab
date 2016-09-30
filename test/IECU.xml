@@ -1,479 +1,236 @@
-﻿<AutomationForm>
-  <Templates />
-  <DocBody>
-  <Section Type="Notice" AutoHeading="No" Confidentiality="Outsourcer">
-    <SectionBody>
-      <ToAdd>
-        <Name>PathLink</Name>
-        <Attributes>
-          <Type>URL</Type>
-          <Value>
-            https://vstf-us-wa-28.partners.extranet.microsoft.com:8443/tfs/ContentIdea/ContentIdea/_workitems/edit/<ToInput key="CI ID"/>
-          </Value>
-        </Attributes>
-        <Text>Content Idea Request <ToInput key="CI ID"/></Text>
-      </ToAdd>
-    </SectionBody>
-  </Section>
-  <Section Type="Summary" AutoHeading="Yes">
-    <SectionBody>
-      This security update resolves several reported vulnerabilities in Internet Explorer. These vulnerabilities could allow remote code execution if a user views a specially crafted webpage in Internet Explorer. To learn more about the vulnerabilities, see <ToAdd>
-      <Name>PathLink</Name>
-      <Attributes>
-        <Type>URL</Type>
-        <Value>
-          https://technet.microsoft.com/library/security/<ToInput key="MS ID">Input bulletin</ToInput>
-        </Value>
-      </Attributes>
-      <Text>
-        Microsoft Security Bulletin <ToInput key="MS ID">Input bulletin</ToInput>
-      </Text>
-    </ToAdd>.<Boilerplate BoilerplateName="Assets_Reference_JSCSS" Version="6">
-        <Output Target="Web">
-          <Formatting Type="FixedText">&lt;script src="//support.microsoft.com/library/JavaScript/support/en-US/Assets_CIP_V1.js" type="text/javascript"&gt;&lt;/script&gt;</Formatting>
-        </Output>
-      </Boilerplate>
-    </SectionBody>
-  </Section>
-  <Section Type="Summary" AutoHeading="No" Confidentiality="Public">
-    <SectionHeading>How to get and install the update</SectionHeading>
-    <SectionBody>
-      <Formatting Type="H3">Method 1: Microsoft Update</Formatting>
-      <PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_start_expanded.png"/>This update is available through Microsoft Update. When you turn on automatic updating, this update will be downloaded and installed automatically. For more information about how to get security updates automatically, see the "Turn on automatic updating in Control Panel" section of <PathLink Type="URL" Value="https://www.microsoft.com/security/pc-security/updates.aspx">this Safety &amp; Security Center article</PathLink>. <Br/><Br/><Formatting Type="B">Note</Formatting> For Windows RT and Windows RT 8.1, this update is available through Microsoft Update only.<PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_end.png"/><Formatting Type="H3">Method 2: Microsoft Download Center</Formatting><PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_start_collapsed.png"/>
-      You can get the stand-alone update package through the Microsoft Download Center. Go to <PathLink Type="URL" Value="https://technet.microsoft.com/library/security/MS16-051">Microsoft Security Bulletin MS16-051</PathLink> to find the download links for this update.
-
-      <PathLink Type="Graphic" Value="https://support.microsoft.com/library/images/support/en-US/assets_folding_end_collapsed.png"/>
-    </SectionBody>
-  </Section>
-  <Section Type="MoreInformation" AutoHeading="Yes">
-    <SectionBody>
-      The following article contains more information about this security update:<Boilerplate BoilerplateName="xref2" Version="2">
-        <Parameter Id="P1">3154070</Parameter>
-        <Parameter Id="P2">MS16-051: Security update for Internet Explorer: May 10, 2016</Parameter>
-        <Formatting Type="Indent">
-          <KBLink Type="ContentObject" ContentId="3154070" ContentType="KB" LanguageLocale="[LN]">3154070</KBLink> MS16-051: Security update for Internet Explorer: May 10, 2016
-        </Formatting>
-      </Boilerplate>Additionally, see the following Microsoft KB articles for information about the Windows 10 and Windows 10 Version 1511 cumulative updates:<Boilerplate BoilerplateName="xref2" Version="2">
-        <Parameter Id="P1">3156387</Parameter>
-        <Parameter Id="P2">Cumulative Update for Windows 10: May 10, 2016</Parameter>
-        <Formatting Type="Indent">
-          <KBLink Type="ContentObject" ContentId="3156387" ContentType="KB" LanguageLocale="[LN]">3156387</KBLink> Cumulative Update for Windows 10: May 10, 2016
-        </Formatting>
-      </Boilerplate><Boilerplate BoilerplateName="xref2" Version="2">
-        <Parameter Id="P1">3156421</Parameter>
-        <Parameter Id="P2">Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016</Parameter>
-        <Formatting Type="Indent">
-          <KBLink Type="ContentObject" ContentId="3156421" ContentType="KB" LanguageLocale="[LN]">3156421</KBLink> Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016
-        </Formatting>
-      </Boilerplate><Formatting Type="H3">Security update deployment information</Formatting><PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_start_collapsed.png"/><Formatting Type="H4">Windows Vista (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file names</Formatting>
-          </Td>
-          <Td>
-            For Internet Explorer 9 for all supported 32-bit editions of Windows Vista:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td> </Td>
-          <Td>
-            For Internet Explorer 9 for all supported x64-based editions of Windows Vista:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            WUSA.exe does not support uninstall of updates. To uninstall an update installed by WUSA, click <Formatting Type="B">Control Panel</Formatting>, and then click <Formatting Type="B">Security</Formatting>. Under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Registry key verification</Formatting>
-          </Td>
-          <Td>
-            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
-          </Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows Server 2008</Formatting><Formatting Type="H5">Reference Table</Formatting>he following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file names</Formatting>
-          </Td>
-          <Td>
-            For Internet Explorer 9 for all supported 32-bit editions of Windows Server 2008:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td> </Td>
-          <Td>
-            For Internet Explorer 9 in all supported x64-based editions of Windows Server 2008:<Br/><Formatting Type="B">IE9-Windows6.0-KB3154070-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            WUSA.exe does not support uninstall of updates. To uninstall an update installed by WUSA, click <Formatting Type="B">Control Panel</Formatting>, and then click <Formatting Type="B">Security</Formatting>. Under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Registry key verification</Formatting>
-          </Td>
-          <Td>
-            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
-          </Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows 7 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file name</Formatting>
-          </Td>
-          <Td>
-            For Internet Explorer 11 for Windows 7 for 32-bit Systems Service Pack 1:<Br/><Formatting Type="B">IE11-Windows6.1-KB3154070-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td> </Td>
-          <Td>
-            For Internet Explorer 11 for Windows 7 for x64-based Systems Service Pack 1:<Br/><Formatting Type="B">IE11-Windows6.1-KB3154070-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>A system restart is required after you apply this security update.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, and then under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Registry key verification</Formatting>
-          </Td>
-          <Td>
-            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
-          </Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows Server 2008 R2 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file name</Formatting>
-          </Td>
-          <Td>
-            For Internet Explorer 11 for Windows Server 2008 R2 for x64-based Systems Service Pack 1:<Br/><Formatting Type="B">IE11-Windows6.1-KB3154070-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, and then under <UITerm>Windows Update</UITerm>, click <Formatting Type="B">View installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Registry key verification</Formatting>
-          </Td>
-          <Td>
-            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
-          </Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows 8.1 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file name</Formatting>
-          </Td>
-          <Td>
-            For Internet Explorer 11 in all supported 32-bit editions of Windows 8.1:<Br/><Formatting Type="B">Windows8.1-KB3154070-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td> </Td>
-          <Td>
-            For Internet Explorer 11 in all supported x64-based editions of Windows 8.1:<Br/><Formatting Type="B">Windows8.1-KB3154070-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates<Formatting Type="B">.</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Registry key verification</Formatting>
-          </Td>
-          <Td>
-            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
-          </Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows Server 2012 and Windows Server 2012 R2 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file name</Formatting>
-          </Td>
-          <Td>
-            For Internet Explorer 10 in all supported editions of Windows Server 2012:<Br/><Formatting Type="B">Windows8-RT-KB3154070-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td> </Td>
-          <Td>
-            For Internet Explorer 11 in all supported editions of Windows Server 2012 R2:<Br/><Formatting Type="B">Windows8.1-KB3154070-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3154070">Microsoft Knowledge Base Article 3154070</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Registry key verification</Formatting>
-          </Td>
-          <Td>
-            <Formatting Type="B">Note</Formatting> A registry key does not exist to validate the presence of this update.
-          </Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows RT 8.1 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software.<Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Deployment</Formatting>
-          </Td>
-          <Td>
-            This update is available via <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:http://go.microsoft.com/fwlink/?LinkId=21130">Windows Update</PathLink>.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart Requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal Information</Formatting>
-          </Td>
-          <Td>
-            Click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>Not applicable</Td>
-        </Tr>
-      </Table><Formatting Type="H4">Windows 10 (all editions)</Formatting><Formatting Type="H5">Reference Table</Formatting>The following table contains the security update information for this software. <Table>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Security update file name</Formatting>
-          </Td>
-          <Td>
-            For all supported 32-bit editions of Windows 10:<Br/><Formatting Type="B">Windows10.0-KB3156387-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td></Td>
-          <Td>
-            For all supported x64-based editions of Windows 10:<Br/><Formatting Type="B">Windows10.0-KB3156387-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td></Td>
-          <Td>
-            For all supported 32-bit editions of Windows 10 Version 1511:<Br/><Formatting Type="B">Windows10.0-KB3156421-x86.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td></Td>
-          <Td>
-            For all supported x64-based editions of Windows 10 Version 1511:<Br/><Formatting Type="B">Windows10.0-KB3156421-x64.msu</Formatting>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Installation switches</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/934307">Microsoft Knowledge Base Article 934307</PathLink>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Restart requirement</Formatting>
-          </Td>
-          <Td>In some cases, this update does not require a restart. If the required files are being used, this update will require a restart. If this behavior occurs, a message appears that advises you to restart.</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">Removal information</Formatting>
-          </Td>
-          <Td>
-            To uninstall an update installed by WUSA, use the <Formatting Type="B">/Uninstall</Formatting> setup switch or click <Formatting Type="B">Control Panel</Formatting>, click <Formatting Type="B">System and Security</Formatting>, click <Formatting Type="B">Windows Update</Formatting>, and then under <UITerm>See also</UITerm>, click <Formatting Type="B">Installed updates</Formatting> and select from the list of updates.
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <Formatting Type="B">File information</Formatting>
-          </Td>
-          <Td>
-            See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3156387">Microsoft Knowledge Base Article 3156387</PathLink><Br/>See <PathLink Type="URL" Value="mhtml:file://C:\Users\deland\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\EHRWXD8X\MS16-051 deployment tables.mht!x-usc:https://support.microsoft.com/kb/3156421">Microsoft Knowledge Base Article 3156421</PathLink>
-          </Td>
-        </Tr>
-      </Table> <PathLink Type="Graphic" Value="http://support.microsoft.com/library/images/support/en-US/assets_folding_end_collapsed.png"/><Formatting Type="H3">How to get help and support for this security update</Formatting><PathLink Type="Graphic" Value="https://support.microsoft.com/library/images/support/en-US/assets_folding_start_collapsed.png"/>Help for installing updates: <PathLink Type="URL" Value="https://support.microsoft.com/ph/6527">Support for Microsoft Update</PathLink><Br/><Br/>
-      Security solutions for IT professionals: <PathLink Type="URL" Value="https://technet.microsoft.com/security/bb980617.aspx">TechNet Security Troubleshooting and Support</PathLink><Br/><Br/>
-      Help for protecting your Windows-based computer from viruses and malware: <PathLink Type="URL" Value="https://support.microsoft.com/contactus/cu_sc_virsec_master">Virus Solution and Security Center</PathLink><Br/><Br/>Local support according to your country: <PathLink Type="URL" Value="http://support.microsoft.com">International Support</PathLink><PathLink Type="Graphic" Value="https://support.microsoft.com/library/images/support/en-US/assets_folding_end_collapsed.png"/>
-    </SectionBody>
-  </Section>
-  <Section Type="SecureData" AutoHeading="No" Confidentiality="Outsourcer">
-    <SectionBody>
-      For more information about the end-to-end process for Internet Explorer cumulative updates, see the following article: <Formatting Type="Indent">
-        <PathLink Type="URL" Value="http://bemis/2403490">2403490 End to end process for Internet Explorer cumulative updates</PathLink>
-      </Formatting><Formatting Type="B">Note</Formatting> Knowledge Base article 2403490 is MSInternal and available only in Bemis. <Br/><Br/><Formatting Type="B">Author: secure </Formatting><Br/><Formatting Type="B">Writer: kbSec (delhan)</Formatting><Br/><Formatting Type="B">Tech Review: secure</Formatting><Br/><Formatting Type="B">Editor: v-tiburd</Formatting>
-    </SectionBody>
-  </Section>
-</DocBody>
-</AutomationForm>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
+  <introduction>
+    <para>The following examples demonstrate the syntax for setting a metabase property using different technologies, such as Windows Management Instrumentation (WMI) and Active Directory Service Interfaces (ADSI). The code examples are written in Microsoft® Visual Basic® Scripting Edition (VBScript), JScript®, and Perl.</para>
+    <para>The examples are simplified to show the essential code that is needed to change a metabase property. If you use these examples, add error checking code and security checking code before using them to configure your server.</para>
+  </introduction>
+  <section>
+    <title>Implementation Guidelines</title>
+    <content />
+    <sections>
+      <section>
+        <title>To implement one of the VBScript, JScript, or Perl examples in a command-line administration script</title>
+        <content>
+          <list class="bullet">
+            <listItem>
+              <para>For VBScript: Save the script file with the file name extension of .vbs and call a script with "cscript //nologo <placeholder>filename</placeholder>.vbs".</para>
+            </listItem>
+            <listItem>
+              <para>For JScript: Save the script file with the file name extension of .js and call a script with "cscript //nologo <placeholder>filename</placeholder>.js".</para>
+            </listItem>
+            <listItem>
+              <para>For Perl: Save the script file with the file name extension of .pl and call a script with "perl <placeholder>filename</placeholder>.pl".</para>
+            </listItem>
+          </list>
+        </content>
+      </section>
+      <section>
+        <title>To implement one of the VBScript, JScript, or Perl examples in an ASP page</title>
+        <content>
+          <list class="ordered">
+            <listItem>
+              <para>Set security on the Web application to disable anonymous access. Anonymous access to metabase properties is not allowed. The user requesting the ASP page should be an Administrator. In addition, the process executing the ASP page must have permission to modify the metabase.</para>
+            </listItem>
+            <listItem>
+              <para>Add the following lines of ASP code, where the first line is at the top of the file, and "<placeholder>language</placeholder>" is "Microsoft Visual Basic Scripting Edition (VBScript)", "JScript", or "PerlScript":</para>
+              <code>    &lt;%@ Language="<legacyItalic>language</legacyItalic>" %&gt;
+    &lt;%
+    <legacyItalic>insert the example code here</legacyItalic>
+    %&gt;</code>
+            </listItem>
+            <listItem>
+              <para>Change instances of <languageKeyword>WScript.Echo</languageKeyword> to <languageKeyword>Response.Write</languageKeyword>, and <languageKeyword>print</languageKeyword> to <languageKeyword>$Response-&gt;Write</languageKeyword>.</para>
+            </listItem>
+            <listItem>
+              <para>Change the file name extension of your file to .asp.</para>
+            </listItem>
+            <listItem>
+              <para>Install ActivePerl with PerlScript to run the Perl examples. ActivePerl can be downloaded from the <externalLink><linkText>ActiveState</linkText><linkUri>http://go.microsoft.com/fwlink/?LinkId=3804</linkUri></externalLink> Web site.</para>
+            </listItem>
+          </list>
+        </content>
+      </section>
+    </sections>
+  </section>
+  <section>
+    <title>Code Examples</title>
+    <content>
+      <para>In the following examples, there are italicized words that must be replaced by a valid string for the example to execute properly. Replace <placeholder>property_name_1</placeholder> and <placeholder>property_name_2</placeholder> with metabase property names. Replace <placeholder>numeric_or_Boolean_value</placeholder> and <placeholder>String_value</placeholder> with a valid data types for that property.</para>
+      <para>These examples demonstrate how to set a metabase property to a string, number, or Boolean value. These examples do not cover WMI situations where you need to pass in an object.</para>
+    </content>
+    <sections>
+      <section>
+        <title>WMI</title>
+        <content>
+          <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
+            <tbody>
+              <tr>
+                <TD colspan="1">
+                  <para>Microsoft Visual Basic Scripting Edition (VBScript)</para>
+                </TD>
+                <TD colspan="1">
+                  <code>var providerObj=GetObject("winmgmts:/root/MicrosoftIISv2");
+var vdirObj=providerObj.get("IIsWebVirtualDirSetting='W3SVC/1/ROOT'");
+// Print out the current value of some properties:
+WScript.Echo("Before: " + vdirObj.<legacyItalic>property_name_1</legacyItalic> + ", " + vdirObj.<legacyItalic>property_name_2</legacyItalic>);
+// Set some properties:
+vdirObj.<legacyItalic>property_name_1</legacyItalic>=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;
+vdirObj.<legacyItalic>property_name_2</legacyItalic>="<legacyItalic>String_value</legacyItalic>";
+// Save the property changes in the metabase:
+vdirObj.Put_();
+WScript.Echo("After: " + vdirObj.<legacyItalic>property_name_1</legacyItalic> + ", " + vdirObj.<legacyItalic>property_name_2</legacyItalic>);</code>
+                </TD>
+              </tr>
+              <tr>
+                <TD colspan="1">
+                  <para>JScript</para>
+                </TD>
+                <TD colspan="1">
+                  <code>var providerObj=GetObject("winmgmts:/root/MicrosoftIISv2");
+var vdirObj=providerObj.get("IIsWebVirtualDirSetting='W3SVC/1/ROOT'");
+// Print out the current value of some properties:
+WScript.Echo("Before: " + vdirObj.<legacyItalic>property_name_1</legacyItalic> + ", " + vdirObj.<legacyItalic>property_name_2</legacyItalic>);
+// Set some properties:
+vdirObj.<legacyItalic>property_name_1</legacyItalic>=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;
+vdirObj.<legacyItalic>property_name_2</legacyItalic>="<legacyItalic>String_value</legacyItalic>";
+// Save the property changes in the metabase:
+vdirObj.Put_();
+WScript.Echo("After: " + vdirObj.<legacyItalic>property_name_1</legacyItalic> + ", " + vdirObj.<legacyItalic>property_name_2</legacyItalic>);</code>
+                </TD>
+              </tr>
+              <tr>
+                <TD colspan="1">
+                  <para>Perl</para>
+                </TD>
+                <TD colspan="1">
+                  <code>use Win32;
+use Win32::OLE;
+my $providerObj=Win32::OLE -&gt; GetObject("winmgmts:/root/MicrosoftIISv2");
+my $vdirObj=$providerObj-&gt;Get("IIsWebVirtualDirSetting='W3SVC/1'");
+# Print out the current value of some properties:
+print "Before: ", $vdirObj-&gt;{"<legacyItalic>property_name_1</legacyItalic>"}, ", ", $vdirObj-&gt;{"<legacyItalic>property_name_2</legacyItalic>"}, "\n";
+# Set some properties:
+$vdirObj-&gt;{"<legacyItalic>property_name_1</legacyItalic>"}=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;
+$vdirObj-&gt;{"<legacyItalic>property_name_2</legacyItalic>"}="<legacyItalic>String_value</legacyItalic>";
+# Save the property changes in the metabase:
+vdirObj-&gt;Put_();
+print "After: ", $vdirObj-&gt;{"<legacyItalic>property_name_1</legacyItalic>"}, ", ", $vdirObj-&gt;{"<legacyItalic>property_name_2</legacyItalic>"}, "\n";</code>
+                </TD>
+              </tr>
+            </tbody>
+          </table>
+        </content>
+      </section>
+      <section>
+        <title>ADSI</title>
+        <content>
+          <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
+            <tbody>
+              <tr>
+                <TD colspan="1">
+                  <para>Microsoft Visual Basic Scripting Edition (VBScript)</para>
+                </TD>
+                <TD colspan="1">
+                  <code>set vdirObj=GetObject("IIS://localhost/W3svc/1/Root")
+' Print out the current value of some properties:
+WScript.Echo "Before: " &amp; vdirObj.<legacyItalic>property_name_1</legacyItalic> &amp; ", " &amp; vdirObj.<legacyItalic>property_name_2</legacyItalic>
+' Set some properties:
+vdirObj.Put "<legacyItalic>property_name_1</legacyItalic>", <legacyItalic>numeric_or_Boolean_value</legacyItalic>
+vdirObj.Put "<legacyItalic>property_name_2</legacyItalic>", "<legacyItalic>String_value</legacyItalic>"
+' Save the property changes in the metabase:
+vdirObj.SetInfo
+WScript.Echo "After: " &amp; vdirObj.<legacyItalic>property_name_1</legacyItalic> &amp; ", " &amp; vdirObj.<legacyItalic>property_name_2</legacyItalic></code>
+                </TD>
+              </tr>
+              <tr>
+                <TD colspan="1">
+                  <para>JScript</para>
+                </TD>
+                <TD colspan="1">
+                  <code>var vdirObj=GetObject("IIS://localhost/W3svc/1/Root");
+// Print out the current value of some properties:
+WScript.Echo("Before: " + vdirObj.<legacyItalic>property_name_1</legacyItalic> + ", " + vdirObj.<legacyItalic>property_name_2</legacyItalic>);
+// Set some properties:
+vdirObj.Put("<legacyItalic>property_name_1</legacyItalic>", <legacyItalic>numeric_or_Boolean_value</legacyItalic>);
+vdirObj.Put("<legacyItalic>property_name_2</legacyItalic>", "<legacyItalic>String_value</legacyItalic>");
+// Save the property changes in the metabase:
+vdirObj.SetInfo();
+WScript.Echo("After: " + vdirObj.<legacyItalic>property_name_1</legacyItalic> + ", " + vdirObj.<legacyItalic>property_name_2</legacyItalic>);</code>
+                </TD>
+              </tr>
+              <tr>
+                <TD colspan="1">
+                  <para>Perl</para>
+                </TD>
+                <TD colspan="1">
+                  <code>use Win32;
+use Win32::OLE;
+my $vdirObj=Win32::OLE -&gt; GetObject("IIS://localhost/W3SVC/1/Root");
+# Print out the current value of some properties:
+print "Before: ", $vdirObj-&gt;{"<legacyItalic>property_name_1</legacyItalic>"}, ", ", $vdirObj-&gt;{"<legacyItalic>property_name_2</legacyItalic>"}, "\n";
+# Set some properties:
+$vdirObj-&gt;{"<legacyItalic>property_name_1</legacyItalic>"}=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;
+$vdirObj-&gt;{"<legacyItalic>property_name_2</legacyItalic>"}="<legacyItalic>String_value</legacyItalic>";
+# Save the property changes in the metabase:
+$vdirObj-&gt;SetInfo(); 
+print "After: ", $vdirObj-&gt;{"<legacyItalic>property_name_1</legacyItalic>"}, ", ", $vdirObj-&gt;{"<legacyItalic>property_name_2</legacyItalic>"}, "\n";</code>
+                </TD>
+              </tr>
+            </tbody>
+          </table>
+          <para>You may encounter errors when running example code that you have altered. The following table lists possible errors and their causes.</para>
+          <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
+            <thead>
+              <tr>
+                <TD colspan="1">
+                  <para>Error Code</para>
+                </TD>
+                <TD colspan="1">
+                  <para>Possible Cause</para>
+                </TD>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <TD colspan="1">
+                  <para>0x80005006</para>
+                </TD>
+                <TD colspan="1">
+                  <para>The property does not exist, or it does not exist at the access location where you are attempting to set it.</para>
+                  <para>For example, you cannot set the <link xlink:href="c235ad7f-cb08-4c87-b350-d9e2749c5d76">AdminServer Metabase Property</link> at the Web site level (W3SVC/1, W3SVC/1/ROOT) or the virtual directory level (W3SVC/1/ROOT/vdir); you can set it only at the World Wide Web Publishing Service (WWW service) level. You cannot set the <link xlink:href="1f263c2a-db1a-421b-80cd-a40d7eb46df3">AdminEmail Metabase Property</link> on any Web, File Transfer Protocol (FTP), or Simple Mail Transfer Protocol (SMTP) metabase key; you can set it only on a Network News Transfer Protocol (NNTP) metabase key.</para>
+                  <para>See the <link xlink:href="562c1596-2e04-4002-8af8-86247e008c5c">Metabase Property Reference</link> for the metabase property that you are trying to set. Use the Access Locations table to verify that you are accessing the property at a valid location. Or, you can open the MetaBase.xml file on your server and search for the property to see what locations it is set on.</para>
+                </TD>
+              </tr>
+              <tr>
+                <TD colspan="1">
+                  <para>0x8000500C</para>
+                </TD>
+                <TD colspan="1">
+                  <para>The data type of the property is different than the data type to which you are attempting to set it.</para>
+                  <para>For example, you cannot set the <link xlink:href="5c247fb2-a0bb-4afd-bd85-a8cea22872b0">AspCodepage Metabase Property</link> property to a string ("English"); you can set it only to a number representing a code page (1252).</para>
+                </TD>
+              </tr>
+            </tbody>
+          </table>
+        </content>
+      </section>
+      <section>
+        <title>Related Information</title>
+        <content>
+          <list class="bullet">
+            <listItem>
+              <para>For information about scripting in JScript or Microsoft Visual Basic Scripting Edition (VBScript), see the <externalLink><linkText>Microsoft Script Technologies</linkText><linkUri>http://go.microsoft.com/fwlink/?LinkId=1758</linkUri></externalLink> SDK.</para>
+            </listItem>
+            <listItem>
+              <para>For an article about scripting in PerlScript, see <externalLink><linkText>Active Scripting with PerlScript</linkText><linkUri>http://go.microsoft.com/fwlink/?LinkId=3803</linkUri></externalLink>.</para>
+            </listItem>
+            <listItem>
+              <para>For information about WMI and ADSI, including additional examples, see <externalLink><linkText>IIS Administration Technologies</linkText><linkUri>http://go.microsoft.com/fwlink/?LinkId=38501</linkUri></externalLink> in the IIS SDK on MSDN.</para>
+            </listItem>
+          </list>
+        </content>
+      </section>
+    </sections>
+  </section>
+  <relatedTopics />
+</developerConceptualDocument>

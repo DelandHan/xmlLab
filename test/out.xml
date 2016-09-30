@@ -1,0 +1,161 @@
+<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
+  <introduction>
+    <para>The following examples demonstrate the syntax for setting a metabase property using different technologies, such as Windows Management Instrumentation (WMI) and Active Directory Service Interfaces (ADSI). The code examples are written in Microsoft® Visual Basic® Scripting Edition (VBScript), JScript®, and Perl.</para>
+    <para>The examples are simplified to show the essential code that is needed to change a metabase property. If you use these examples, add error checking code and security checking code before using them to configure your server.</para>
+  </introduction>
+  <section>
+    <title>Implementation Guidelines</title>
+    <content></content>
+    <sections>
+      <section>
+        <title>To implement one of the VBScript, JScript, or Perl examples in a command-line administration script</title>
+        <content>
+          <list class="bullet">
+            <listItem>
+              <para>
+                For VBScript: Save the script file with the file name extension of .vbs and call a script with &quot;cscript //nologo <placeholder>filename</placeholder>.vbs&quot;.
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                For JScript: Save the script file with the file name extension of .js and call a script with &quot;cscript //nologo <placeholder>filename</placeholder>.js&quot;.
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                For Perl: Save the script file with the file name extension of .pl and call a script with &quot;perl <placeholder>filename</placeholder>.pl&quot;.
+              </para>
+            </listItem>
+          </list>
+        </content>
+      </section>
+      <section>
+        <title>To implement one of the VBScript, JScript, or Perl examples in an ASP page</title>
+        <content>
+          <list class="ordered">
+            <listItem>
+              <para>Set security on the Web application to disable anonymous access. Anonymous access to metabase properties is not allowed. The user requesting the ASP page should be an Administrator. In addition, the process executing the ASP page must have permission to modify the metabase.</para>
+            </listItem>
+            <listItem>
+              <para>
+                Add the following lines of ASP code, where the first line is at the top of the file, and &quot;<placeholder>language</placeholder>&quot; is &quot;Microsoft Visual Basic Scripting Edition (VBScript)&quot;, &quot;JScript&quot;, or &quot;PerlScript&quot;:
+              </para>
+              <code>
+                &lt;%@ Language=&quot;<legacyItalic>language</legacyItalic>&quot; %&gt; &lt;% <legacyItalic>insert the example code here</legacyItalic> %&gt;
+              </code>
+            </listItem>
+            <listItem>
+              <para>
+                Change instances of <languageKeyword>WScript.Echo</languageKeyword> to <languageKeyword>Response.Write</languageKeyword>, and <languageKeyword>print</languageKeyword> to <languageKeyword>$Response-&gt;Write</languageKeyword>.
+              </para>
+            </listItem>
+            <listItem>
+              <para>Change the file name extension of your file to .asp.</para>
+            </listItem>
+            <listItem>
+              <para>
+                Install ActivePerl with PerlScript to run the Perl examples. ActivePerl can be downloaded from the <externalLink>
+                  <linkText>ActiveState</linkText>
+                  <linkUri>http://go.microsoft.com/fwlink/?LinkId=3804</linkUri>
+                </externalLink> Web site.
+              </para>
+            </listItem>
+          </list>
+        </content>
+      </section>
+    </sections>
+  </section>
+  <section>
+    <title>Code Examples</title>
+    <content>
+      <para>
+        In the following examples, there are italicized words that must be replaced by a valid string for the example to execute properly. Replace <placeholder>property_name_1</placeholder> and <placeholder>property_name_2</placeholder> with metabase property names. Replace <placeholder>numeric_or_Boolean_value</placeholder> and <placeholder>String_value</placeholder> with a valid data types for that property.
+      </para>
+      <para>These examples demonstrate how to set a metabase property to a string, number, or Boolean value. These examples do not cover WMI situations where you need to pass in an object.</para>
+    </content>
+    <sections>
+      <section>
+        <title>WMI</title>
+        <content>
+          <para>Microsoft Visual Basic Scripting Edition (VBScript)</para>
+          <code>
+            var providerObj=GetObject(&quot;winmgmts:/root/MicrosoftIISv2&quot;);var vdirObj=providerObj.get(&quot;IIsWebVirtualDirSetting=&apos;W3SVC/1/ROOT&apos;&quot;);// Print out the current value of some properties:WScript.Echo(&quot;Before: &quot; + vdirObj.<legacyItalic>property_name_1</legacyItalic> + &quot;, &quot; + vdirObj.<legacyItalic>property_name_2</legacyItalic>);// Set some properties:vdirObj.<legacyItalic>property_name_1</legacyItalic>=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;vdirObj.<legacyItalic>property_name_2</legacyItalic>=&quot;<legacyItalic>String_value</legacyItalic>&quot;;// Save the property changes in the metabase:vdirObj.Put_();WScript.Echo(&quot;After: &quot; + vdirObj.<legacyItalic>property_name_1</legacyItalic> + &quot;, &quot; + vdirObj.<legacyItalic>property_name_2</legacyItalic>);
+          </code>
+          <para>JScript</para>
+          <code>
+            var providerObj=GetObject(&quot;winmgmts:/root/MicrosoftIISv2&quot;);var vdirObj=providerObj.get(&quot;IIsWebVirtualDirSetting=&apos;W3SVC/1/ROOT&apos;&quot;);// Print out the current value of some properties:WScript.Echo(&quot;Before: &quot; + vdirObj.<legacyItalic>property_name_1</legacyItalic> + &quot;, &quot; + vdirObj.<legacyItalic>property_name_2</legacyItalic>);// Set some properties:vdirObj.<legacyItalic>property_name_1</legacyItalic>=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;vdirObj.<legacyItalic>property_name_2</legacyItalic>=&quot;<legacyItalic>String_value</legacyItalic>&quot;;// Save the property changes in the metabase:vdirObj.Put_();WScript.Echo(&quot;After: &quot; + vdirObj.<legacyItalic>property_name_1</legacyItalic> + &quot;, &quot; + vdirObj.<legacyItalic>property_name_2</legacyItalic>);
+          </code>
+          <para>Perl</para>
+          <code>
+            use Win32;use Win32::OLE;my $providerObj=Win32::OLE -&gt; GetObject(&quot;winmgmts:/root/MicrosoftIISv2&quot;);my $vdirObj=$providerObj-&gt;Get(&quot;IIsWebVirtualDirSetting=&apos;W3SVC/1&apos;&quot;);# Print out the current value of some properties:print &quot;Before: &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_1</legacyItalic>&quot;}, &quot;, &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_2</legacyItalic>&quot;}, &quot;\n&quot;;# Set some properties:$vdirObj-&gt;{&quot;<legacyItalic>property_name_1</legacyItalic>&quot;}=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;$vdirObj-&gt;{&quot;<legacyItalic>property_name_2</legacyItalic>&quot;}=&quot;<legacyItalic>String_value</legacyItalic>&quot;;# Save the property changes in the metabase:vdirObj-&gt;Put_();print &quot;After: &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_1</legacyItalic>&quot;}, &quot;, &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_2</legacyItalic>&quot;}, &quot;\n&quot;;
+          </code>
+        </content>
+      </section>
+      <section>
+        <title>ADSI</title>
+        <content>
+          <para>Microsoft Visual Basic Scripting Edition (VBScript)</para>
+          <code>
+            set vdirObj=GetObject(&quot;IIS://localhost/W3svc/1/Root&quot;)&apos; Print out the current value of some properties:WScript.Echo &quot;Before: &quot; &amp; vdirObj.<legacyItalic>property_name_1</legacyItalic> &amp; &quot;, &quot; &amp; vdirObj.<legacyItalic>property_name_2</legacyItalic>&apos; Set some properties:vdirObj.Put &quot;<legacyItalic>property_name_1</legacyItalic>&quot;, <legacyItalic>numeric_or_Boolean_value</legacyItalic>vdirObj.Put &quot;<legacyItalic>property_name_2</legacyItalic>&quot;, &quot;<legacyItalic>String_value</legacyItalic>&quot;&apos; Save the property changes in the metabase:vdirObj.SetInfoWScript.Echo &quot;After: &quot; &amp; vdirObj.<legacyItalic>property_name_1</legacyItalic> &amp; &quot;, &quot; &amp; vdirObj.<legacyItalic>property_name_2</legacyItalic>
+          </code>
+          <para>JScript</para>
+          <code>
+            var vdirObj=GetObject(&quot;IIS://localhost/W3svc/1/Root&quot;);// Print out the current value of some properties:WScript.Echo(&quot;Before: &quot; + vdirObj.<legacyItalic>property_name_1</legacyItalic> + &quot;, &quot; + vdirObj.<legacyItalic>property_name_2</legacyItalic>);// Set some properties:vdirObj.Put(&quot;<legacyItalic>property_name_1</legacyItalic>&quot;, <legacyItalic>numeric_or_Boolean_value</legacyItalic>);vdirObj.Put(&quot;<legacyItalic>property_name_2</legacyItalic>&quot;, &quot;<legacyItalic>String_value</legacyItalic>&quot;);// Save the property changes in the metabase:vdirObj.SetInfo();WScript.Echo(&quot;After: &quot; + vdirObj.<legacyItalic>property_name_1</legacyItalic> + &quot;, &quot; + vdirObj.<legacyItalic>property_name_2</legacyItalic>);
+          </code>
+          <para>Perl</para>
+          <code>
+            use Win32;use Win32::OLE;my $vdirObj=Win32::OLE -&gt; GetObject(&quot;IIS://localhost/W3SVC/1/Root&quot;);# Print out the current value of some properties:print &quot;Before: &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_1</legacyItalic>&quot;}, &quot;, &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_2</legacyItalic>&quot;}, &quot;\n&quot;;# Set some properties:$vdirObj-&gt;{&quot;<legacyItalic>property_name_1</legacyItalic>&quot;}=<legacyItalic>numeric_or_Boolean_value</legacyItalic>;$vdirObj-&gt;{&quot;<legacyItalic>property_name_2</legacyItalic>&quot;}=&quot;<legacyItalic>String_value</legacyItalic>&quot;;# Save the property changes in the metabase:$vdirObj-&gt;SetInfo(); print &quot;After: &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_1</legacyItalic>&quot;}, &quot;, &quot;, $vdirObj-&gt;{&quot;<legacyItalic>property_name_2</legacyItalic>&quot;}, &quot;\n&quot;;
+          </code>
+          <para>You may encounter errors when running example code that you have altered. The following table lists possible errors and their causes.</para>
+          <para>Error Code</para>
+          <para>Possible Cause</para>
+          <para>0x80005006</para>
+          <para>The property does not exist, or it does not exist at the access location where you are attempting to set it.</para>
+          <para>
+            For example, you cannot set the <link xlink:href="c235ad7f-cb08-4c87-b350-d9e2749c5d76">AdminServer Metabase Property</link> at the Web site level (W3SVC/1, W3SVC/1/ROOT) or the virtual directory level (W3SVC/1/ROOT/vdir); you can set it only at the World Wide Web Publishing Service (WWW service) level. You cannot set the <link xlink:href="1f263c2a-db1a-421b-80cd-a40d7eb46df3">AdminEmail Metabase Property</link> on any Web, File Transfer Protocol (FTP), or Simple Mail Transfer Protocol (SMTP) metabase key; you can set it only on a Network News Transfer Protocol (NNTP) metabase key.
+          </para>
+          <para>
+            See the <link xlink:href="562c1596-2e04-4002-8af8-86247e008c5c">Metabase Property Reference</link> for the metabase property that you are trying to set. Use the Access Locations table to verify that you are accessing the property at a valid location. Or, you can open the MetaBase.xml file on your server and search for the property to see what locations it is set on.
+          </para>
+          <para>0x8000500C</para>
+          <para>The data type of the property is different than the data type to which you are attempting to set it.</para>
+          <para>
+            For example, you cannot set the <link xlink:href="5c247fb2-a0bb-4afd-bd85-a8cea22872b0">AspCodepage Metabase Property</link> property to a string (&quot;English&quot;); you can set it only to a number representing a code page (1252).
+          </para>
+        </content>
+      </section>
+      <section>
+        <title>Related Information</title>
+        <content>
+          <list class="bullet">
+            <listItem>
+              <para>
+                For information about scripting in JScript or Microsoft Visual Basic Scripting Edition (VBScript), see the <externalLink>
+                  <linkText>Microsoft Script Technologies</linkText>
+                  <linkUri>http://go.microsoft.com/fwlink/?LinkId=1758</linkUri>
+                </externalLink> SDK.
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                For an article about scripting in PerlScript, see <externalLink>
+                  <linkText>Active Scripting with PerlScript</linkText>
+                  <linkUri>http://go.microsoft.com/fwlink/?LinkId=3803</linkUri>
+                </externalLink>.
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                For information about WMI and ADSI, including additional examples, see <externalLink>
+                  <linkText>IIS Administration Technologies</linkText>
+                  <linkUri>http://go.microsoft.com/fwlink/?LinkId=38501</linkUri>
+                </externalLink> in the IIS SDK on MSDN.
+              </para>
+            </listItem>
+          </list>
+        </content>
+      </section>
+    </sections>
+  </section>
+  <relatedTopics></relatedTopics>
+</developerConceptualDocument>
